@@ -1,0 +1,86 @@
+     public static void main(String[] args) {
+     //a.
+      ///1. menghitung elemen array
+      int[] angka = {3, 7, 8, 1, 10, 20, 35};
+      
+      System.out.println("Jumlah elemen array angka = " + angka.length);
+      
+      ///2. array satu dimensi
+      int[] angka = {5, 10, 17, 20, 1};
+      String[] teks = {"saya", "sedang", "belajar", "OOP", "Java"};
+      
+      for (int i=0; i<angka.length; i++){
+          System.out.println(angka[i]);
+      }
+      for (int j=0; j<teks.length; j++){
+          System.out.println(teks[j]);
+          System.out.print(" ");
+      }
+      
+      ///3. array dua dimensi
+      int [][] angka = {{5, 4, 2, 1, 5},{9, 6, 5, 7, 8},{5, 2, 1, 5, 10}};
+      for (int baris = 0; baris < 3; baris++) {
+          for (int kolom = 0; kolom < 5; kolom++) {
+          System.out.print(angka[baris][kolom] + "    ");
+      }
+          System.out.println("");
+    }
+      //b.
+      ///1. 
+      
+      // membuat variabel dan scanner
+      int nilai;
+      String grade;
+      Scanner scan = new Scanner (System.in);
+      // mengambil input
+      System.out.print("Inputkan nilai: ");
+      nilai = scan.nextInt();
+      
+      // hitung gradenya
+      if (nilai >= 90) {
+          grade = "A";
+      }
+      else if (nilai >= 80) {
+          grade = "B+";
+      }
+      else if (nilai >= 70) {
+          grade = "B";
+      }
+      else if (nilai >= 60) {
+          grade = "C+";
+      }
+      else if (nilai >= 50) {
+          grade = "C";
+      }
+      else if (nilai >= 40) {
+          grade = "D";
+      }
+      else {
+          grade = "E";
+      }
+      
+      // cek hasilnya
+      System.out.println("Grade: " + grade);
+      
+      
+      ///2.
+      String lampu;
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.print("Inputkan nama warna: ");
+      lampu = scan.nextLine();
+      
+      switch (lampu) {
+          case "meraah" :
+              System.out.println("Lampu merah, berhenti");
+              break;
+          case "kuning" :
+              System.out.println("Lampu kuning, harap hati-hati");
+              break;
+          case "hijau" :
+              System.out.println("Lampu hijau, silahkan jalan!");
+              break;
+          default :
+              System.out.println("Warna lampu salah!");
+      }
+    }}
